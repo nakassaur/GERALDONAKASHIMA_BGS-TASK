@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ef718c25a1ca54db874d45d18c7c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadingScreenSO: {fileID: 11400000, guid: 8c0474e2aa5d86742a92c41b7e5ca7d1, type: 2}
 --- !u!4 &54459201
 Transform:
   m_ObjectHideFlags: 0
@@ -826,7 +827,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1813060889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54459200}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: LoadMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1545574271
 CanvasRenderer:
   m_ObjectHideFlags: 0
