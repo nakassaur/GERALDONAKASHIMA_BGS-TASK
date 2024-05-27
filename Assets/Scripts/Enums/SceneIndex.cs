@@ -5,7 +5,8 @@ using UnityEngine;
 public enum SceneIndex
 {
     TITLE = 0,
-    MAP = 1,
-    UI = 2,
-    SETTINGS = 3
+    MENU = 1,
+    MAP = 2,
+    UI = 3,
+    SETTINGS = 4
 }
