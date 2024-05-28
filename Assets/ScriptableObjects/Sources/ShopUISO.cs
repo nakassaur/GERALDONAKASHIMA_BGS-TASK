@@ -8,7 +8,20 @@ public class ShopUISO : ScriptableObject
     public Transform ItemOptionPrefab;
 
     public ShopData ActiveShopData;
+    public Item ActiveItem;
 
+    //
+    public delegate void ShowDelegate();
+    public event ShowDelegate EventOnShow;
+
+    public void Show() { this.EventOnShow?.Invoke(); }
+
+    public delegate void HideDelegate();
+    public event HideDelegate EventOnHide;
+
+    public void Hide() { this.EventOnHide?.Invoke(); }
+
+    //
     public void SetShopData(ShopData data) { ActiveShopData = data; }
 
     public delegate void HighlightedItemUpdatedDelegate(Item item);
@@ -21,14 +34,9 @@ public class ShopUISO : ScriptableObject
     
     public void ShowShopModal(Item item) {  this.EventOnShowShopModal?.Invoke(item); }
 
-    //
-    public delegate void ShowDelegate();
-    public event ShowDelegate EventOnShow;
+    public delegate void TryPurchaseDelegate(Item item);
+    public event TryPurchaseDelegate EventOnTryPurchase;
 
-    public void Show() { this.EventOnShow?.Invoke(); }
-
-    public delegate void HideDelegate();
-    public event HideDelegate EventOnHide;
-
-    public void Hide() { this.EventOnHide?.Invoke(); }
+    public void TryPurchase() { this.EventOnTryPurchase?.Invoke(ActiveItem); }
+    
 }

@@ -7,12 +7,6 @@ public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] LoadingScreenSO LoadingScreenSO;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     public void LoadMap()
     {
         LoadingScreenSO.Show();

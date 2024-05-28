@@ -11,8 +11,6 @@ public class NPCScript : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.LogError("Interacting!");
-
         DialogUISO.SetNPCName(_npcDisplayName);
         DialogUISO.ActiveDialogData = _dialogData;
         DialogUISO.Show();

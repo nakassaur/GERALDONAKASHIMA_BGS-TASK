@@ -16,7 +16,6 @@ public class LoadingScreenManager : MonoBehaviour
         LoadingScreenSO.EventOnShow += LoadingScreenSO_EventOnShow;
         LoadingScreenSO.EventOnLoadScene += LoadingScreenSO_EventOnLoadScene;
         LoadingScreenSO.EventOnAddToLoadingList += LoadingScreenSO_EventOnAddToLoadingList;
-        LoadingScreenSO.EventOnLoadComplete += LoadingScreenSO_EventOnLoadComplete;
     }
         
     // Event Signature
@@ -35,11 +34,6 @@ public class LoadingScreenManager : MonoBehaviour
         _scenesLoading.Add(SceneManager.LoadSceneAsync(sceneID, LoadSceneMode.Additive));
     }
 
-    void LoadingScreenSO_EventOnLoadComplete()
-    {
-        throw new System.NotImplementedException();
-    }
-
     // Coroutines
     public IEnumerator GetLoadProgress()
     {
@@ -51,7 +45,8 @@ public class LoadingScreenManager : MonoBehaviour
 
         LeanTween.delayedCall(2.0f, () =>
         {
-            _mainContainer.SetActive(false);
+            LoadingScreenSO.LoadComplete();
+            _mainContainer.SetActive(false);            
         });
 
     }

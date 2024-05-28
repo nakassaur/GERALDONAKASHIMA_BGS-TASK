@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a91ee83236ade4088281b1af247b1c, type: 3}
   m_Name: Database
   m_EditorClassIdentifier: 
+  startingCurrency: 100
   PlayerBaseSpeed: 5
   InteractionRadius: 1
   InteractionMask:
     serializedVersion: 2
     m_Bits: 128
+  OnPurchaseSuccessful: {fileID: 11400000, guid: 7fcf457e5da37c449b99ba3ad2da3378, type: 2}
+  OnPurchaseFailedNotEnoughMoney: {fileID: 11400000, guid: 46d8f3b42c542e84b8578950ea4bb843, type: 2}
+  OnPurchaseFailedUniqueCheck: {fileID: 11400000, guid: 06f047bf5f6714845b37c8379f2c9c22, type: 2}

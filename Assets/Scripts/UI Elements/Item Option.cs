@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class ItemOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -16,6 +17,10 @@ public class ItemOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     [SerializeField] Image _icon;
     [SerializeField] TMP_Text _text;
 
+    [SerializeField] GameObject _soldOutContainer;
+    
+    bool isCosmetic(Item item) => item.Category != ItemCategory.Outfit && item.Category != ItemCategory.Hat;
+
     public Item _item { get; private set; }
         
     public void SetItem(Item item)
@@ -24,12 +29,21 @@ public class ItemOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
         _icon.sprite = _item.MenuSprite;
         _text.text = _item.DisplayName;
+
+        if (isCosmetic(item) == true)
+        {
+            _soldOutContainer.SetActive(false);
+            return;
+        }
+
+        bool logic = PlayerInventory.singleton.CheckIfIHaveThis(item);
+        _soldOutContainer.SetActive(logic);
+
     }
 
     // Interfaces
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.LogError("Pointer Enter");
         ShopUISO.SetHighlightedItem(_item);
 
         LeanTween.color(_background.rectTransform, _highlightColor, 0.1f);
@@ -44,7 +58,8 @@ public class ItemOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.LogError("Click!");
+        if (_soldOutContainer.activeSelf == true) return;
+
         ShopUISO.ShowShopModal(_item);
     }
     

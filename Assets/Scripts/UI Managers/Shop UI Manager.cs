@@ -99,6 +99,7 @@ public class ShopUIManager : MonoBehaviour
     {
         _modalContainer.SetActive(true);
         _modalItemTarget.text = item.DisplayName.ToUpper() + "?";
+        ShopUISO.ActiveItem = item;
     }
 
 }

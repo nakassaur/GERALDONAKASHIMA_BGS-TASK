@@ -353,6 +353,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1147327366}
   - component: {fileID: 1147327365}
+  - component: {fileID: 1147327367}
+  - component: {fileID: 1147327368}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -387,6 +389,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147327367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147327364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9ac132739c448479e772052ee9a525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DB: {fileID: 11400000, guid: 8eb88223be9bb5e4db4e4d30a37213bc, type: 2}
+  PlayerHUDSO: {fileID: 11400000, guid: da0e06b8629674e48a8916a8597a2c21, type: 2}
+  DialogUISO: {fileID: 11400000, guid: f623220c9dd424b48a85c90f74a21015, type: 2}
+  ShopUISO: {fileID: 11400000, guid: 5d0dd9a4037278b419b24539a424b0da, type: 2}
+  LoadingScreenSO: {fileID: 11400000, guid: 8c0474e2aa5d86742a92c41b7e5ca7d1, type: 2}
+--- !u!114 &1147327368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147327364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7979e33835c92948b94591032dd82e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apparel: []
 --- !u!1 &1515801370
 GameObject:
   m_ObjectHideFlags: 0
