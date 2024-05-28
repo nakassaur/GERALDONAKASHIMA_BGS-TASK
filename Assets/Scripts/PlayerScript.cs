@@ -61,6 +61,9 @@ public class PlayerScript : MonoBehaviour
     // Event Signature
     void InteractAction_performed(InputAction.CallbackContext obj)
     {
+        if (CheckForOpenMenus.singleton == null) return;
+        if (CheckForOpenMenus.singleton.IsOpen == true) return;
+
         if (InteractionTarget == null) return;
 
         InteractionTarget.GetComponent<IInteractable>().Interact();

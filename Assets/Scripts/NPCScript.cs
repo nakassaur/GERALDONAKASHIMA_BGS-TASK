@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class NPCScript : MonoBehaviour, IInteractable
 {
-    [SerializeField] DialogUIManager DialogUIManager;
-    [SerializeField] ShopUIManager ShopUIManager;
+    [SerializeField] DialogUISO DialogUISO;
 
-    [SerializeField] ShopData shopData;
+    [SerializeField] string _npcDisplayName;
+    [SerializeField] DialogData _dialogData;
 
     public void Interact()
     {
+        Debug.LogError("Interacting!");
 
+        DialogUISO.SetNPCName(_npcDisplayName);
+        DialogUISO.ActiveDialogData = _dialogData;
+        DialogUISO.Show();
+        DialogUISO.LoadData();
     }
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e334ff72be22b488f6f87d6dccc24e, type: 3}
+  m_Name: Shop Keeper@Introduction
+  m_EditorClassIdentifier: 
+  DialogString: Hi there! How can I help you?
+  Options:
+  - OptionText: Buy Stuff
+    DialogAction: 1
+    ContextObj: {fileID: 11400000, guid: 484cc518694c983479cc23649cc65bb0, type: 2}
+  - OptionText: Talk
+    DialogAction: 0
+    ContextObj: {fileID: 11400000, guid: 59e2d9e129f15ea4da0351a3c0f19f67, type: 2}
+  - OptionText: Leave
+    DialogAction: 2
+    ContextObj: {fileID: 0}

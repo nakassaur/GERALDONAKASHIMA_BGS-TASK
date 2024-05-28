@@ -2264,6 +2264,7 @@ GameObject:
   - component: {fileID: 1555188970}
   - component: {fileID: 1555188972}
   - component: {fileID: 1555188971}
+  - component: {fileID: 1555188973}
   m_Layer: 7
   m_Name: Shop Keeper
   m_TagString: Untagged
@@ -2383,6 +2384,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1555188973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555188969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85e150bda9a75d47b3340cf8e747d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogUISO: {fileID: 11400000, guid: f623220c9dd424b48a85c90f74a21015, type: 2}
+  _npcDisplayName: Junko
+  _dialogData: {fileID: 11400000, guid: be88343fd09a40a46acbc36801ce4615, type: 2}
 --- !u!1 &1678290661
 GameObject:
   m_ObjectHideFlags: 0

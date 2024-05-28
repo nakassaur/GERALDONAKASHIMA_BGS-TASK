@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bc94164f97f8f459883953a54f2f5b, type: 3}
   m_Name: ShopUISO
   m_EditorClassIdentifier: 
+  ItemOptionPrefab: {fileID: 5444787645717477246, guid: 40778d195c47e2f4094104352376476d, type: 3}
+  ActiveShopData: {fileID: 0}

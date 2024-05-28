@@ -5,7 +5,13 @@ using UnityEngine;
 [CreateAssetMenu (fileName = "DialogUISO", menuName = "ScriptableObject/DialogUISO")]
 public class DialogUISO : ScriptableObject
 {
+    public DialogData ActiveDialogData;
 
+    //
+    public delegate void SetNPCNameDelegate(string name);
+    public event SetNPCNameDelegate EventOnSetNPCName;
+
+    public void SetNPCName(string name) { this.EventOnSetNPCName?.Invoke(name); }
 
     //
     public delegate void ShowDelegate();
@@ -17,4 +23,10 @@ public class DialogUISO : ScriptableObject
     public event HideDelegate EventOnHide;
 
     public void Hide() { this.EventOnHide?.Invoke(); }
+
+    //
+    public delegate void LoadDataDelegate();
+    public event LoadDataDelegate EventOnLoadData;
+
+    public void LoadData() {  this.EventOnLoadData?.Invoke(); }
 }
