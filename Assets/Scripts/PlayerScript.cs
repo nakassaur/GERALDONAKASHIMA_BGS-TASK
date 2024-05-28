@@ -18,7 +18,7 @@ public class PlayerScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         _move = _moveAction.ReadValue<Vector2>();
         _rb2d.velocity = _move * 5;
