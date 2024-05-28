@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class CheckForOpenMenus
+public class CheckForOpenMenus : MonoBehaviour
 {
     #region Singleton Setup
     public static CheckForOpenMenus singleton;
@@ -12,7 +13,34 @@ public class CheckForOpenMenus
     }
     #endregion
 
-    public bool IsOpen => InGameMenuManager.singleton.isVisible ||
-                          DialogUIManager.singleton.isVisible ||
-                          ShopUIManager.singleton.isVisible;
+    public bool IsOpen => CheckIfMenusAreOpen();
+
+    private bool CheckIfMenusAreOpen()
+    {
+        /*if (SettingsManager.singleton != null)
+        {
+            if (SettingsManager.singleton.isVisible == true)
+                return true;
+        }*/
+
+        if (InGameMenuManager.singleton != null)
+        {
+            if (InGameMenuManager.singleton.isVisible == true)
+                return true;
+        }
+
+        if (ShopUIManager.singleton != null)
+        {
+            if (ShopUIManager.singleton.isVisible == true)
+                return true;
+        }
+
+        if (DialogUIManager.singleton != null)
+        {
+            if (DialogUIManager.singleton.isVisible == true)
+                return true;
+        }
+
+        return false;
+    }
 }
