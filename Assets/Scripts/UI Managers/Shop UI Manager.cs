@@ -46,6 +46,9 @@ public class ShopUIManager : MonoBehaviour
     {
         ShopUISO.EventOnShow -= ShopUISO_EventOnShow;
         ShopUISO.EventOnHide -= ShopUISO_EventOnHide;
+
+        ShopUISO.EventOnHighlightedItemUpdated -= ShopUISO_EventOnHighlightedItemUpdated;
+        ShopUISO.EventOnShowShopModal -= ShopUISO_EventOnShowShopModal;
     }
 
     // Private Methods

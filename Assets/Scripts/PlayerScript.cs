@@ -58,7 +58,14 @@ public class PlayerScript : MonoBehaviour
         //
         WorldManager.singleton.player = this;
     }
-        
+
+    void OnDestroy()
+    {
+        _interactAction.performed -= InteractAction_performed;
+        _wardrobeAction.performed -= WardrobeAction_performed;
+        _escapeAction.performed -= EscapeAction_performed;
+    }
+
     void Update()
     {
         if (CheckForOpenMenus.singleton == null) return;
@@ -102,8 +109,12 @@ public class PlayerScript : MonoBehaviour
 
     void EscapeAction_performed(InputAction.CallbackContext obj)
     {
+        if (CheckForOpenMenus.singleton.IsOpen == true)
+        {
+            CheckForOpenMenus.singleton.CloseAllMenus();
+            return;
+        }
 
-
-        _move = Vector2.zero;
+        InGameMenuSO.Show();
     }
 }

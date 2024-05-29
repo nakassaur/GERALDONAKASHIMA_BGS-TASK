@@ -13,5 +13,13 @@ public class MainMenuManager : MonoBehaviour
         LoadingScreenSO.LoadScene((int) SceneIndex.MAP);
         LoadingScreenSO.AddToLoadingList((int) SceneIndex.UI);
     }
+
+    public void ExitToWindows()
+    {
+        if (Application.isEditor == true)
+            return;
+
+        Application.Quit();
+    }
     
 }

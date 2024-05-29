@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SettingsSO", menuName = "ScriptableObject/SettingsSO")]
 public class SettingsSO : ScriptableObject
 {
+    //
     public delegate void ShowDelegate();
     public event ShowDelegate EventOnShow;
 

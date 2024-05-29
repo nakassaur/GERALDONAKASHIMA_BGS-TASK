@@ -38,6 +38,7 @@ public class DialogUIManager : MonoBehaviour
     {
         DialogUISO.EventOnShow -= DialogUISO_EventOnShow;
         DialogUISO.EventOnHide -= DialogUISO_EventOnHide;
+        DialogUISO.EventOnLoadData -= DialogUISO_EventOnLoadData;
 
         DialogUISO.EventOnSetNPCName -= DialogUISO_EventOnSetNPCName;
     }

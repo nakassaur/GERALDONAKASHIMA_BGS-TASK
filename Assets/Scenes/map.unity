@@ -379,6 +379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62160d4d9d877464cadbee774b6c2b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SettingsSO: {fileID: 11400000, guid: e588c7b1c72960f4bae952ad6fbf910f, type: 2}
+  InGameMenuSO: {fileID: 11400000, guid: 540ee3c03337b0f4a8430d6b4c9af297, type: 2}
+  ShopUISO: {fileID: 11400000, guid: 5d0dd9a4037278b419b24539a424b0da, type: 2}
+  DialogUISO: {fileID: 11400000, guid: f623220c9dd424b48a85c90f74a21015, type: 2}
+  WardrobeUISO: {fileID: 11400000, guid: c1e078e7feec5af47b82ec3ccb9c0816, type: 2}
 --- !u!4 &1147327366
 Transform:
   m_ObjectHideFlags: 0

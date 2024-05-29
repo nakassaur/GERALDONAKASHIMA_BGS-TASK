@@ -12,6 +12,7 @@ public class InGameMenuManager : MonoBehaviour
     }
     #endregion
 
+    [SerializeField] LoadingScreenSO loadingScreenSO;
     [SerializeField] InGameMenuSO inGameMenuSO;
 
     [SerializeField] GameObject _mainContainer;
@@ -29,6 +30,13 @@ public class InGameMenuManager : MonoBehaviour
     {
         inGameMenuSO.EventOnShow -= InGameMenuSO_EventOnShow;
         inGameMenuSO.EventOnHide -= InGameMenuSO_EventOnHide;
+    }
+
+    // Public Methods
+    public void ExitToMainMenu()
+    {
+        loadingScreenSO.Show();
+        loadingScreenSO.LoadScene((int) SceneIndex.MENU);        
     }
 
     // Event Signature

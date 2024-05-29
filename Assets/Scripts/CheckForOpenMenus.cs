@@ -13,15 +13,21 @@ public class CheckForOpenMenus : MonoBehaviour
     }
     #endregion
 
+    [SerializeField] SettingsSO SettingsSO;
+    [SerializeField] InGameMenuSO InGameMenuSO;
+    [SerializeField] ShopUISO ShopUISO;
+    [SerializeField] DialogUISO DialogUISO;
+    [SerializeField] WardrobeUISO WardrobeUISO;
+
     public bool IsOpen => CheckIfMenusAreOpen();
 
     private bool CheckIfMenusAreOpen()
     {
-        /*if (SettingsManager.singleton != null)
+        if (SettingsManager.singleton != null)
         {
             if (SettingsManager.singleton.isVisible == true)
                 return true;
-        }*/
+        }
 
         if (InGameMenuManager.singleton != null)
         {
@@ -48,5 +54,14 @@ public class CheckForOpenMenus : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void CloseAllMenus()
+    {
+        SettingsSO.Hide();
+        InGameMenuSO.Hide();
+        ShopUISO.Hide();
+        DialogUISO.Hide();
+        WardrobeUISO.Hide();
     }
 }
