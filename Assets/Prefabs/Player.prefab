@@ -488,6 +488,7 @@ MonoBehaviour:
   WardrobeUISO: {fileID: 11400000, guid: c1e078e7feec5af47b82ec3ccb9c0816, type: 2}
   _playerInput: {fileID: 408577559692947980}
   _rb2d: {fileID: 4699955625886396240}
+  _animator: {fileID: 4862823583043842045}
   _move: {x: 0, y: 0}
 --- !u!114 &1175193861381144896
 MonoBehaviour:

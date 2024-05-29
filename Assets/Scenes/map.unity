@@ -411,6 +411,7 @@ MonoBehaviour:
   DialogUISO: {fileID: 11400000, guid: f623220c9dd424b48a85c90f74a21015, type: 2}
   ShopUISO: {fileID: 11400000, guid: 5d0dd9a4037278b419b24539a424b0da, type: 2}
   LoadingScreenSO: {fileID: 11400000, guid: 8c0474e2aa5d86742a92c41b7e5ca7d1, type: 2}
+  player: {fileID: 0}
 --- !u!114 &1147327368
 MonoBehaviour:
   m_ObjectHideFlags: 0

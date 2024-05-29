@@ -14,6 +14,10 @@ public class PlayerScript : MonoBehaviour
     // Component References
     [SerializeField] PlayerInput _playerInput;
     [SerializeField] Rigidbody2D _rb2d;
+    [SerializeField] Animator _animator;
+
+    readonly int _X = Animator.StringToHash("x");
+    readonly int _Y = Animator.StringToHash("y");
 
     // Variables
     InputAction _moveAction;
@@ -58,11 +62,22 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         if (CheckForOpenMenus.singleton == null) return;
-        if (CheckForOpenMenus.singleton.IsOpen == true) return;
+        if (CheckForOpenMenus.singleton.IsOpen == true)
+        {
+            _animator.SetFloat(_X, 0);
+            _animator.SetFloat(_Y, 0);
+            _rb2d.velocity = Vector2.zero;
+            return;
+        }
+        
 
         InteractionTarget = Physics2D.OverlapCircle(transform.position, DB.InteractionRadius, DB.InteractionMask);
 
         _move = _moveAction.ReadValue<Vector2>();
+
+        _animator.SetFloat(_X, _move.x);
+        _animator.SetFloat(_Y, _move.y);
+
         _rb2d.velocity = _move * DB.PlayerBaseSpeed;
     }
 
@@ -87,6 +102,8 @@ public class PlayerScript : MonoBehaviour
 
     void EscapeAction_performed(InputAction.CallbackContext obj)
     {
-        
+
+
+        _move = Vector2.zero;
     }
 }

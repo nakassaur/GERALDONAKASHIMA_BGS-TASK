@@ -23,6 +23,7 @@ public class ShopUIManager : MonoBehaviour
     [SerializeField] Image _shopSprite;
 
     [SerializeField] TMP_Text _descriptionText;
+    [SerializeField] TMP_Text _priceText;
     
     [SerializeField] GameObject _modalContainer;
     [SerializeField] TMP_Text _modalItemTarget;
@@ -98,10 +99,12 @@ public class ShopUIManager : MonoBehaviour
         if (item == null)
         { 
             _descriptionText.text = "---";
+            _priceText.text = "---";
             return;
         }
 
         _descriptionText.text = item.Description;
+        _priceText.text = item.Price.ToString() + "g";
     }
     void ShopUISO_EventOnShowShopModal(Item item)
     {
