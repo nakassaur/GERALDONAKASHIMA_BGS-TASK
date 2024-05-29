@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206e2ab901293740bbdd118179e9e34, type: 3}
+  m_Name: Cowboy Hat
+  m_EditorClassIdentifier: 
+  DisplayName: Cowboy Hat
+  Category: 6
+  MenuSprite: {fileID: 21300000, guid: 7b820e4024ddd0d4ea5a7caac80ae9de, type: 3}
+  Price: 25
+  Description: Traditional Cowboy Hat. Howdy Parter!
+  Sprites:
+  - {fileID: -2008833902, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -1621082437, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -157668567, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -558236298, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 830546324, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1157471645, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -1721636419, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -830656910, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 312088983, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1625020253, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 781646791, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 2146903264, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -1448201538, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1509196233, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1728048422, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 167253368, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1205638318, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -1262501218, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -1968459965, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1329415635, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1243449756, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1635332752, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: -1148630846, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1784305176, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
+  - {fileID: 1428700000, guid: 127463bf9d27a1e4791b3b840990275a, type: 3}
