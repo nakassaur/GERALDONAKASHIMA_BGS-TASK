@@ -5,8 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ShopUISO", menuName = "ScriptableObject/ShopUISO")]
 public class ShopUISO : ScriptableObject
 {
-    public Transform ItemOptionPrefab;
-
     public ShopData ActiveShopData;
     public Item ActiveItem;
 

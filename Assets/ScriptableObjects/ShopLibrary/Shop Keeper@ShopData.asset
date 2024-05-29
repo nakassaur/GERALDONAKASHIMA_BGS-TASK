@@ -16,3 +16,4 @@ MonoBehaviour:
   shopSprite: {fileID: 21300000, guid: 1b6f24f1dcfee0e4b9e2c34f730df2f8, type: 3}
   items:
   - {fileID: 11400000, guid: 22b000105fbf1184a8d48b8769e7b687, type: 2}
+  - {fileID: 11400000, guid: e3cc83d8d90f12a4998d4cbdcfcf496e, type: 2}

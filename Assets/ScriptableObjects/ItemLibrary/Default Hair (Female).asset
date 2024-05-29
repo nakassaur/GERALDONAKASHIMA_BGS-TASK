@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Default Hair (Female)
   m_EditorClassIdentifier: 
   DisplayName: Default Hair (Female)
-  Category: 2
+  Category: 5
   MenuSprite: {fileID: 21300000, guid: 7b820e4024ddd0d4ea5a7caac80ae9de, type: 3}
   Price: 0
   Description: 

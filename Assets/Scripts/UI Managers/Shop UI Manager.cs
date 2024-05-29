@@ -15,6 +15,7 @@ public class ShopUIManager : MonoBehaviour
     }
     #endregion
 
+    [SerializeField] Database DB;
     [SerializeField] ShopUISO ShopUISO;
 
     [SerializeField] GameObject _mainContainer;
@@ -52,7 +53,7 @@ public class ShopUIManager : MonoBehaviour
         if (_itemListRoot.childCount > 0)
         {
             for (int i = 0; i < _itemListRoot.childCount; i++)
-                Destroy(_itemListRoot.GetChild(0).gameObject);
+                DestroyImmediate(_itemListRoot.GetChild(0).gameObject);            
         }
 
         // Aliasing for shortening the line size
@@ -60,7 +61,7 @@ public class ShopUIManager : MonoBehaviour
 
         for (int i=0;i<activeList.Count;i++)
         {
-            Transform instance = Instantiate(ShopUISO.ItemOptionPrefab);
+            Transform instance = Instantiate(DB.itemOptionPrefab);
             ItemOption io = instance.GetComponent<ItemOption>();
 
             io.SetItem(activeList[i]);
@@ -82,6 +83,13 @@ public class ShopUIManager : MonoBehaviour
 
     void ShopUISO_EventOnHide()
     {
+        // Forced a Second Clean-up because of some leftover elements not beeing deleted
+        if (_itemListRoot.childCount > 0)
+        {
+            for (int i = 0; i < _itemListRoot.childCount; i++)
+                DestroyImmediate(_itemListRoot.GetChild(0).gameObject);            
+        }
+
         _mainContainer.SetActive(false);
         _modalContainer.SetActive(false);
     }

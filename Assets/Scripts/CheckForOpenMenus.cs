@@ -41,6 +41,12 @@ public class CheckForOpenMenus : MonoBehaviour
                 return true;
         }
 
+        if (WardrobeUIManager.singleton != null)
+        {
+            if (WardrobeUIManager.singleton.isVisible == true)
+                return true;
+        }
+
         return false;
     }
 }

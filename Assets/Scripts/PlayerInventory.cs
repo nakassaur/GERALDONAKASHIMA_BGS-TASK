@@ -19,7 +19,7 @@ public class PlayerInventory : MonoBehaviour
     // For general purpose Inventory, which would have consumables, tools and materials, I'd make use of an
     // extension of the Item ScriptableObject to keep track of Quality and Quantity of those items
 
-    private List<Item> apparel = new List<Item>();
+    public List<Item> apparel = new List<Item>();
 
     // Public Methods
     public bool CheckIfIHaveThis(Item item)
@@ -27,8 +27,5 @@ public class PlayerInventory : MonoBehaviour
         return apparel.Contains(item);
     }
 
-    public void AddNewApparel(Item item)
-    {
-        apparel.Add(item);
-    }
+    
 }

@@ -1,14 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
+
+public enum ItemOptionType
+{ 
+    Shop,
+    Wardrobe
+}
 
 public class ItemOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     [SerializeField] ShopUISO ShopUISO;
+    [SerializeField] WardrobeUISO WardrobeUISO;
+
+    [SerializeField] ItemOptionType _type;
 
     [SerializeField] Color _normalColor;
     [SerializeField] Color _highlightColor;
@@ -18,26 +24,39 @@ public class ItemOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     [SerializeField] TMP_Text _text;
 
     [SerializeField] GameObject _soldOutContainer;
+    [SerializeField] GameObject _equippedIndicator;
     
-    bool isCosmetic(Item item) => item.Category != ItemCategory.Outfit && item.Category != ItemCategory.Hat;
+    bool isCosmetic(Item item) => item.Category == ItemCategory.Shoe || item.Category == ItemCategory.Lower ||
+                                  item.Category == ItemCategory.Top || item.Category == ItemCategory.Hairstyle || 
+                                  item.Category == ItemCategory.Hat;
 
     public Item _item { get; private set; }
-        
+
+    public void SetType(ItemOptionType type)
+    {
+        _type = type;
+    }
+
     public void SetItem(Item item)
     {
         _item = item;
 
         _icon.sprite = _item.MenuSprite;
         _text.text = _item.DisplayName;
-
-        if (isCosmetic(item) == true)
+                
+        if (_type == ItemOptionType.Wardrobe)
         {
             _soldOutContainer.SetActive(false);
+
+            bool equipped = WorldManager.singleton.player.transform.GetComponent<PlayerAnimation>().CheckIfItemIsEquipped(item);
+            _equippedIndicator.SetActive(equipped);
             return;
         }
 
         bool logic = PlayerInventory.singleton.CheckIfIHaveThis(item);
         _soldOutContainer.SetActive(logic);
+
+        _equippedIndicator.SetActive(false);
 
     }
 
@@ -58,9 +77,19 @@ public class ItemOption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (_soldOutContainer.activeSelf == true) return;
+        // Shop Behaviour
+        if (_type == ItemOptionType.Shop)
+        {
+            if (_soldOutContainer.activeSelf == true) return;
 
-        ShopUISO.ShowShopModal(_item);
+            ShopUISO.ShowShopModal(_item);
+            return;
+        }
+
+        // Wardrobe Behaviour        
+        WorldManager.singleton.player.transform.GetComponent<PlayerAnimation>().EquipItem(_item);
+        WardrobeUISO.ForceListRefresh();
+        
     }
     
 }

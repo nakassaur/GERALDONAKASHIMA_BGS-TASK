@@ -21,3 +21,5 @@ MonoBehaviour:
   OnPurchaseSuccessful: {fileID: 11400000, guid: 7fcf457e5da37c449b99ba3ad2da3378, type: 2}
   OnPurchaseFailedNotEnoughMoney: {fileID: 11400000, guid: 46d8f3b42c542e84b8578950ea4bb843, type: 2}
   OnPurchaseFailedUniqueCheck: {fileID: 11400000, guid: 06f047bf5f6714845b37c8379f2c9c22, type: 2}
+  itemOptionPrefab: {fileID: 3304959304285968674, guid: 34933d7d8354d66428e6ab0211cb61b6, type: 3}
+  NoHatOption: {fileID: 11400000, guid: 4dfa4f94d17a0a044b7d729e3404baa8, type: 2}

@@ -20,6 +20,8 @@ public class WorldManager : MonoBehaviour
 
     int _currency;
 
+    public PlayerScript player;
+
     // Properties
     public int Currency
     {
@@ -46,7 +48,11 @@ public class WorldManager : MonoBehaviour
     // Private Functions
     void TryPurchase(Item item)
     {
-        if (PlayerInventory.singleton.CheckIfIHaveThis(item) == true)
+        bool isCosmetic = item.Category == ItemCategory.Shoe || item.Category == ItemCategory.Lower ||
+                                  item.Category == ItemCategory.Top || item.Category == ItemCategory.Hairstyle ||
+                                  item.Category == ItemCategory.Hat;
+
+        if (isCosmetic && PlayerInventory.singleton.CheckIfIHaveThis(item) == true)
         {
             DialogUISO.ActiveDialogData = DB.OnPurchaseFailedUniqueCheck;
             DialogUISO.Show();
@@ -68,7 +74,11 @@ public class WorldManager : MonoBehaviour
         DialogUISO.Show();
         DialogUISO.LoadData();
 
-        PlayerInventory.singleton.AddNewApparel(item);
+        if (isCosmetic == true)
+            PlayerInventory.singleton.apparel.Add(item);
+
+        //
+        // Add to PlayerInventory (General, not Apparel)
     }
 
     // Event Signatures

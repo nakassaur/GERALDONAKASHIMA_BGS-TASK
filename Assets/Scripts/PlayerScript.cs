@@ -8,6 +8,8 @@ public class PlayerScript : MonoBehaviour
     // Scriptable Object References
     [SerializeField] Database DB;
     [SerializeField] PlayerHUDSO PlayerHUDSO;
+    [SerializeField] InGameMenuSO InGameMenuSO;
+    [SerializeField] WardrobeUISO WardrobeUISO;
 
     // Component References
     [SerializeField] PlayerInput _playerInput;
@@ -16,6 +18,7 @@ public class PlayerScript : MonoBehaviour
     // Variables
     InputAction _moveAction;
     InputAction _interactAction;
+    InputAction _wardrobeAction;
     InputAction _escapeAction;
 
     [SerializeField] Vector2 _move;
@@ -41,10 +44,15 @@ public class PlayerScript : MonoBehaviour
     {
         _moveAction = _playerInput.actions["Move"];
         _interactAction = _playerInput.actions["Interact"];
+        _wardrobeAction = _playerInput.actions["Wardrobe"];
         _escapeAction = _playerInput.actions["Escape"];
 
         _interactAction.performed += InteractAction_performed;
+        _wardrobeAction.performed += WardrobeAction_performed;
         _escapeAction.performed += EscapeAction_performed;
+
+        //
+        WorldManager.singleton.player = this;
     }
         
     void Update()
@@ -67,6 +75,14 @@ public class PlayerScript : MonoBehaviour
         if (InteractionTarget == null) return;
 
         InteractionTarget.GetComponent<IInteractable>().Interact();
+    }
+
+    void WardrobeAction_performed(InputAction.CallbackContext obj)
+    {
+        if (CheckForOpenMenus.singleton == null) return;
+        if (CheckForOpenMenus.singleton.IsOpen == true) return;
+
+        WardrobeUISO.Show();
     }
 
     void EscapeAction_performed(InputAction.CallbackContext obj)

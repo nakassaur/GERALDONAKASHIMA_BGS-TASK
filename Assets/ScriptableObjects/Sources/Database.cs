@@ -20,4 +20,11 @@ public class Database : ScriptableObject
     public DialogData OnPurchaseSuccessful;
     public DialogData OnPurchaseFailedNotEnoughMoney;
     public DialogData OnPurchaseFailedUniqueCheck;
+
+    [Header("Item Options")]
+    public Transform itemOptionPrefab;
+
+    [Header("Default Wardrobe Options")]
+    public Item NoHatOption;
+    
 }

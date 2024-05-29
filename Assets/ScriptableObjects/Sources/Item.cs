@@ -6,7 +6,10 @@ public enum ItemCategory
 { 
     General,
     Equipment,    
-    Outfit,
+    Shoe,
+    Lower,
+    Top,
+    Hairstyle,
     Hat
 }
 
