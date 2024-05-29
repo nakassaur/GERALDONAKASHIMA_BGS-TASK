@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206e2ab901293740bbdd118179e9e34, type: 3}
+  m_Name: Default Shirt (Female)
+  m_EditorClassIdentifier: 
+  DisplayName: Default Shirt (Female)
+  Category: 2
+  MenuSprite: {fileID: 21300000, guid: 7b820e4024ddd0d4ea5a7caac80ae9de, type: 3}
+  Price: 0
+  Description: 
+  Sprites:
+  - {fileID: 1744546633, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1540522068, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: -1743377183, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 641054771, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1749192875, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1377637616, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: -1314982007, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1159693260, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: -1818149445, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 2858558, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 279520987, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: -777017915, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1009106909, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1610305993, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 2088889997, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: -1978139204, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: -1603682506, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1583820588, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1945879920, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1246908771, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1715051496, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1347143583, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: -1082378886, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 131600161, guid: 5057972cc627f1847b516fd32506e513, type: 3}
+  - {fileID: 1347262427, guid: 5057972cc627f1847b516fd32506e513, type: 3}

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206e2ab901293740bbdd118179e9e34, type: 3}
+  m_Name: Default Hair (Female)
+  m_EditorClassIdentifier: 
+  DisplayName: Default Hair (Female)
+  Category: 2
+  MenuSprite: {fileID: 21300000, guid: 7b820e4024ddd0d4ea5a7caac80ae9de, type: 3}
+  Price: 0
+  Description: 
+  Sprites:
+  - {fileID: -302353598, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1577290093, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1094489063, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1769911686, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 287972918, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -355611589, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -610533181, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1290494444, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1793813230, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 343372225, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -865639261, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1797751575, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 1719212634, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1267870878, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -963708461, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 355140637, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1430338203, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -1864707753, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 1690067708, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 931898734, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -898474635, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 788792201, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: -85304265, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 239338233, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}
+  - {fileID: 1906370409, guid: e6fbc51a07a91a943870fcbbb4e2c894, type: 3}

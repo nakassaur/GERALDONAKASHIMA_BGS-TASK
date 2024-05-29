@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206e2ab901293740bbdd118179e9e34, type: 3}
+  m_Name: Default Pants
+  m_EditorClassIdentifier: 
+  DisplayName: Default Pants
+  Category: 2
+  MenuSprite: {fileID: 21300000, guid: 7b820e4024ddd0d4ea5a7caac80ae9de, type: 3}
+  Price: 0
+  Description: 
+  Sprites:
+  - {fileID: -1242923277, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 127110221, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -393217244, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 1336182607, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -1467757413, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -1056258210, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 1671137001, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -274146561, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -518481897, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 1092447844, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -138547931, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -787297041, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -1543848352, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -2079961510, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 1739759412, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -504571948, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 629216738, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -1600640025, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -457450097, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -1197341636, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 456764159, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 1981201277, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -911933001, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: -254902798, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}
+  - {fileID: 1900155403, guid: d39c82f283bf33f43898f5ccd9994242, type: 3}

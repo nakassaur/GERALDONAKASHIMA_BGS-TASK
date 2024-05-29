@@ -27,4 +27,6 @@ public class Item : ScriptableObject
     
     [Tooltip("The DESCRIPTION to be showed when it's HIGHLIGHTED")]
     public string Description;
+
+    public List<Sprite> Sprites;
 }

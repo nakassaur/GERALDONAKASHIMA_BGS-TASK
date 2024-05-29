@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206e2ab901293740bbdd118179e9e34, type: 3}
+  m_Name: Default Shirt
+  m_EditorClassIdentifier: 
+  DisplayName: Default Shirt
+  Category: 2
+  MenuSprite: {fileID: 21300000, guid: 7b820e4024ddd0d4ea5a7caac80ae9de, type: 3}
+  Price: 0
+  Description: 
+  Sprites:
+  - {fileID: -1332109650, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -108192978, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 1986310689, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 1758417788, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 320432772, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -1197956784, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 1894529903, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 1250964420, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -969063693, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 1466925919, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 338147409, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 1503928175, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -1411565935, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 483816470, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -752656799, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 776018207, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -1492265848, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 749700258, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -542004377, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 2147323047, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 2092861607, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 252709884, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: 1934966141, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -1721468411, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
+  - {fileID: -1937751303, guid: 2d5d51992da485f4cafd7d54199a9813, type: 3}
